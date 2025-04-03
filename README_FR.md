@@ -226,7 +226,6 @@ Le diagramme d'état d'un bloc fonctionnel de type **In Operation Base** peut se
 </figure>
 
 
-
 <br>
 
 Ce diagramme d'état peut être amélioré en ajoutant un "état globale" ``InOp`` intégrant les sous-états suivants :
