@@ -436,6 +436,40 @@ Le déplacement des axes X, Y et Z de l'unité sera réalisé avec l'application
 
 7. Déplacer la cible en face du capteur de distance l'aide du Dashboard "Node-RED" et effectuer différents tests pour valider le fonctionnement correct du bloc fonctionnel ``FB_O300_DL``.
 
+8. Attention, la qualité du signal n'est pas exceptionnelle, en raison de la qualité du papier de la cible. Une surface métallique conviendrait mieux. Il est donc possible qu'il soit nécessaire d'utiliser le logiciel Baumer Sensor Suite, il faut s'enregistrer avec son mail xxx@hes-so.ch, pour modifier le seuil du signal Q.
+
+
+# Warning
+Nous utiliserons des alarmes lors du prochain labo. Si une alarmes transmet une commande à la machine, ce n'est pas le cas du Warning qui ne fait que transmettre une information **utile** à l'opérateur.
+
+Nous allons utiliser un Warning pour transmettre une information en cas d'erreur du ``FB_O300_DL``.
+
+### ID
+**<span style="color:red;">ID doit être unique</span>**, car c'est cette valeur que le système utilise pour trier les alarmes. C'est aussi un principe, pour une machine, chaque alarme possède un numéro d'identification unique, même si on peut ajouter un paramètre **Value** et éventuellement modifier une partie du texte. Il serait ainsi envisageable d'avoir la même alarme pour close et open avec une **Value** et un **Message** différent. Mais à condition que **Category** ne change pas.
+
+```iecst
+VAR
+	fbSetWarning_Sensor  : FB_HEVS_SetWarning;
+END_VAR
+
+```
+
+### Code
+```iecst
+fbSetWarning_Sensor(bSetWarning := ...,
+                    bAckWarningTrig := FALSE,
+                    // Warning Parameters
+                    ID := 3,
+                    Value := 33,
+                    Message := 'Warning 3, Finished',
+                    Category := E_EventCategory.Warning,
+                    // Reference to plc time from PackTag
+                    plcDateTimePack	:= PackTag.Admin.PLCDateTime,
+                    // Link to PackTag Admin
+                    stAdminWarning := PackTag.Admin.Warning);
+
+```
+
 
 <br>
 

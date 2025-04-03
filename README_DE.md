@@ -439,6 +439,36 @@ Die Bewegung der X-, Y- und Z-Achse der Einheit wird mit der zur Verfügung gest
 
 7. Bewegen Sie das Ziel mit Hilfe des Dashboards „Node-RED“ vor den Distanzsensor und führen Sie verschiedene Tests durch, um die korrekte Funktion des Funktionsblocks ``FB_O300_DL`` zu bestätigen.
 
+8. Achtung, die Signalqualität ist nicht optimal, was auf die Beschaffenheit des Papiers der Zieloberfläche zurückzuführen ist. Eine metallische Oberfläche wäre besser geeignet. Es könnte daher notwendig sein, die Software Baumer Sensor Suite zu verwenden. Registrieren Sie sich mit Ihrer E-Mail-Adresse xxx@hes-so.ch, um den Schwellenwert des Signals Q anzupassen.
+
+# Warnung
+Wir werden Alarme im nächsten Labor verwenden. Während ein Alarm einen Befehl an die Maschine übermitteln kann, dient eine Warnung lediglich dazu, dem Bediener **nützliche** Informationen bereitzustellen.
+
+Wir werden eine Warnung verwenden, um Informationen im Falle eines Fehlers des ``FB_O300_DL`` zu übermitteln.
+
+### ID
+**<span style="color:red;">Die ID muss eindeutig sein</span>**, da das System diesen Wert verwendet, um Alarme zu sortieren. Dies ist auch ein Prinzip: Für eine Maschine hat jeder Alarm eine eindeutige Identifikationsnummer, auch wenn ein Parameter **Value** hinzugefügt und ein Teil des Textes geändert werden kann. Es wäre beispielsweise möglich, denselben Alarm für „close“ und „open“ mit unterschiedlichen **Value**- und **Message**-Werten zu verwenden, solange sich die **Category** nicht ändert.
+
+```iecst
+VAR
+    fbSetWarning_Sensor  : FB_HEVS_SetWarning;
+END_VAR
+```
+
+### Code
+```iecst
+fbSetWarning_Sensor(bSetWarning := ...,
+                    bAckWarningTrig := FALSE,
+                    // Warnungsparameter
+                    ID := 3,
+                    Value := 33,
+                    Message := 'Warnung 3, abgeschlossen',
+                    Category := E_EventCategory.Warning,
+                    // Referenz auf PLC-Zeit aus PackTag
+                    plcDateTimePack	:= PackTag.Admin.PLCDateTime,
+                    // Verknüpfung mit PackTag Admin
+                    stAdminWarning := PackTag.Admin.Warning);
+```
 
 <br>
 
