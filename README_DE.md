@@ -28,16 +28,25 @@ Er verwendet die Triangulations-Lasermesstechnik, um die Entfernung zum Zielobje
 
 <u> Referenz des Sensors</u>: O300.DL-GM1J.72N (11199079)
 
-<figure>
+<div align="center">
     <img src="./img/Baumer-O300DL-11199079-pic.png"
-         alt="Lost image : Baumer-O300DL (11199079)", width=200>
-    <figcaption>Baumer Distanzsensor - O300.DL</figcaption>
-</figure>
+         alt="Lost image : Baumer-O300DL (11199079)" width=200>
+    <figcaption>Capteur de distance Baumer - O300.DL</figcaption>
+</div>
 
 <br>
 
 Dieser Sensor basiert auf der Punkt-zu-Punkt-Kommunikationsschnittstelle **IO-Link** (entspricht der Norm IEC 61131-9).
 
+## How does the IO-Link work?
+
+<div align="center">
+    <img src="./img/How_Does_The_IO_Link_Work.webp"
+         alt="Lost image : How_Does_The_IO_Link_Work">
+    <figcaption>How does the_IO-Link work ?</figcaption>
+</div>
+
+<br>
 
 Im Gegensatz zu herkömmlichen Systemen, bei denen die Analog-Digital-Wandlung auf der analogen Eingangskarte der SPS stattfindet, wird sie hier direkt im Sensor vorgenommen.
 
@@ -148,11 +157,11 @@ Damit eine SPS auf einen IO-Link-Sensor zugreifen kann, ist ein **IO-Link Master
 Dieses Modul fungiert als Gateway, das eine bidirektionale Kommunikation ermöglicht
 zwischen dem „IO-Link“-Protokoll und dem Feldbusprotokoll der SPS (Profinet, EtherCAT, Ethernet/IP, Modbus TCP usw.).
 
-<figure>
+<div align="center">
     <img src="./img/IO-Link_Master_Profinet_8_Port_IP67.webp"
-         alt="Lost image : IO-Link_Master_Profinet_8_Port_IP67", width = 300>
-    <figcaption>IO-Link_Master_Profinet_8_Port_IP67</figcaption>
-</figure>
+         alt="Lost image : How_Does_The_IO_Link_Work", width = 400>
+    <figcaption>IO-Link master Profinet 8 Port IP67</figcaption>
+</div>
 
 
 <br>

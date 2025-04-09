@@ -27,16 +27,25 @@ Il utilise la technologie de mesure laser par triangulation pour déterminer la 
 
 <u> Référence du capteur </u>: O300.DL-GM1J.72N (11199079)
 
-<figure>
+<div align="center">
     <img src="./img/Baumer-O300DL-11199079-pic.png"
-         alt="Lost image : Baumer-O300DL (11199079)", width=200>
+         alt="Lost image : Baumer-O300DL (11199079)" width=200>
     <figcaption>Capteur de distance Baumer - O300.DL</figcaption>
-</figure>
+</div>
 
 <br>
 
 Ce capteur repose sur l'interface de communication point à point **IO-Link** (conforme à la norme IEC 61131-9).
 
+## How does the IO-Link work?
+
+<div align="center">
+    <img src="./img/How_Does_The_IO_Link_Work.webp"
+         alt="Lost image : How_Does_The_IO_Link_Work">
+    <figcaption>How does the_IO-Link work ?</figcaption>
+</div>
+
+<br>
 
 Contrairement aux systèmes traditionnels où la conversion analogique-numérique se fait au niveau de la carte d'entrées analogiques du PLC, celle-ci est effectuée directement à l'intérieur du capteur.
 
@@ -146,12 +155,12 @@ Pour qu'un PLC puisse accéder à un capteur IO-Link, un **IO-Link Master** est 
 Ce module agit comme une passerelle permettant d'établir une communication bidirectionnelle
 entre le protocole "IO-Link" et le protocole du bus de terrain du PLC (Profinet, EtherCAT, Ethernet/IP, Modbus TCP, etc.).
 
-<figure>
-    <img src="./img/IO-Link_Master_Profinet_8_Port_IP67.webp"
-         alt="Lost image : IO-Link_Master_Profinet_8_Port_IP67", width = 300>
-    <figcaption>IO-Link_Master_Profinet_8_Port_IP67</figcaption>
-</figure>
 
+<div align="center">
+    <img src="./img/IO-Link_Master_Profinet_8_Port_IP67.webp"
+         alt="Lost image : How_Does_The_IO_Link_Work", width = 400>
+    <figcaption>IO-Link master Profinet 8 Port IP67</figcaption>
+</div>
 
 <br>
 
