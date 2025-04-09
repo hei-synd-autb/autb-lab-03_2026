@@ -348,6 +348,30 @@
         "h": 482
     },
     {
+        "id": "afcfe23faa8f6540",
+        "type": "group",
+        "z": "95204e97af393e23",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "123ee55bbf283ed2",
+            "cb126c7ceb9915d0",
+            "b099b1941e20764b",
+            "f7d407d406d93872"
+        ],
+        "x": 94,
+        "y": 119,
+        "w": 632,
+        "h": 162
+    },
+    {
         "id": "fab458635840f194",
         "type": "group",
         "z": "66b713bff26c6577",
@@ -418,30 +442,6 @@
         "y": 979,
         "w": 572,
         "h": 82
-    },
-    {
-        "id": "afcfe23faa8f6540",
-        "type": "group",
-        "z": "95204e97af393e23",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "123ee55bbf283ed2",
-            "cb126c7ceb9915d0",
-            "b099b1941e20764b",
-            "f7d407d406d93872"
-        ],
-        "x": 94,
-        "y": 119,
-        "w": 632,
-        "h": 162
     },
     {
         "id": "8966a7b403a8fb88",
@@ -3186,20 +3186,6 @@
         "statusType": "auto",
         "x": 500,
         "y": 360,
-        "wires": []
-    },
-    {
-        "id": "ab0daa9c922d0617",
-        "type": "ui-iframe",
-        "z": "2c31763846faff4a",
-        "name": "",
-        "group": "6b2222aa7324c02b",
-        "order": 0,
-        "src": "https://www.endress.com/en/field-instruments-overview/measurement-technologies/io-link-communication",
-        "width": 6,
-        "height": 8,
-        "x": 370,
-        "y": 500,
         "wires": []
     },
     {
