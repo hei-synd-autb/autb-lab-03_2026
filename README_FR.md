@@ -9,7 +9,7 @@
 Cours AutB
 
 Author: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)
-> Version 2025, V1.0
+> Version 2026, V1.0
 
 # LAB 03 Programmation d'un bloc fonctionnel (FB) qui gère un capteur de distance
 
@@ -373,12 +373,13 @@ Le déplacement des axes X, Y et Z de l'unité sera réalisé avec l'application
 <u> Marche à suivre pour utiliser l'application "Node-RED" </u> :
 
 
-1. Remplacer le fichier ``flows.json`` qui se trouve dans le répertoire C:\Users\[ton_nom_utilisateur]\.node-red par le fichier ``flows.json`` qui se trouve sous : autb-lab-03_2025\PracticalWork_03_Student\
+1. Remplacer le fichier ``flows.json`` qui se trouve dans le répertoire C:\Users\\*YourUsername*\\.node-red par le fichier ``flows.json`` mis à disposition dans Github.
 
 <br>
 
 2. Démarrer Node-RED  
 - Ouvrir l'invite de commande (--> cmd.exe)
+- Entrer la commande : cd C:\Users\\*YourUsername*\\AppData\Roaming\npm
 - Entrer la commande : node-red
 
 <br>

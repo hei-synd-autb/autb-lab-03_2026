@@ -9,7 +9,7 @@
 Cours AutB
 
 Author: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)
-> Version 2025, V1.0
+> Version 2026, V1.0
 
 # LAB 03 Programmierung eines Funktionsblocks (FB), der einen Entfernungssensor verwaltet.
 
@@ -376,12 +376,13 @@ Die Bewegung der X-, Y- und Z-Achse der Einheit wird mit der zur Verfügung gest
 <u> Vorgehensweise bei der Verwendung der Anwendung „Node-RED“ </u> :
 
 
-1. Ersetzen Sie die Datei `flows.json`, die sich im Verzeichnis C:`Users\[ton_name_user]`node-red` befindet, durch die Datei `flows.json`, die sich unter: autb-lab-03_2025\PracticalWork_03_Student\ befindet.
+1. Ersetzen Sie die Datei „flows.json“ im Verzeichnis C:\Users\\*IhrBenutzername*\\.node-red durch die Datei „flows.json“, die auf Github zur Verfügung steht.
 
 <br>
 
 2. Starten Sie Node-RED.  
 - Öffnen Sie die Eingabeaufforderung (--> cmd.exe).
+- Geben Sie den Befehl ein: cd C:\Users\\*YourUsername*\\AppData\Roaming\npm
 - Geben Sie den Befehl ein: node-red
 
 <br>
