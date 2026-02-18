@@ -470,7 +470,7 @@ END_VAR
 fbSetWarning_Sensor(bSetWarning := ...,
                     bAckWarningTrig := FALSE,
                     // Warnungsparameter
-                    ID := 3,
+                    ID := 103,
                     Value := 33,
                     Message := 'Warnung 3, abgeschlossen',
                     Category := E_EventCategory.Warning,
